@@ -1,0 +1,47 @@
+{
+    "¿Qué entendemos por población como elemento del Estado?": {
+        "1)": {"answer":"Conjunto de personas que habitan un determinado territorio y que son susceptibles de ser contabilizados, sean chilenos o extranjeros", "isCorrect": 1049},
+        "2)": {"answer":"Sinónimo de cuerpo electoral, esto es, los ciudadanos habilitados para participar de la vida política de un Estado", "isCorrect": 7893},
+        "3)": {"answer":"Chilenos y extranjeros que pueden participar de la vida política del Estado, esto es, elegir y ser elegido", "isCorrect": 1253}
+    },
+    "¿A quienes se comprende dentro del concepto de población?": {
+        "1)": {"answer":"A todas las personas que se encuentran dentro del territorio, sean estos, nacionales o extranjeros", "isCorrect": 2143},
+        "2)": {"answer":"A los nacionales que se encuentra dentro del territorio", "isCorrect": 6789},
+        "3)": {"answer":"A los nacionales y extranjeros que pueden ejercer derechos políticos, esto es, elegir y ser elegidos", "isCorrect": 9275}
+    },
+    "¿Qué entendemos por territorio como elemento del Estado?": {
+        "1)": {"answer":"Es la delimitación geográfica en la cual se encuentra asentada la población, que pertenece y es administrada por un determinado Estado, es decir, donde éste, ejerce su soberanía", "isCorrect": 2178},
+        "2)": {"answer":"Es la delimitación geográfica en la cual se encuentra asentada la población, que pertenece y es administrada por una determinada nación, es decir, donde ésta, ejerce su soberanía", "isCorrect": 9643},
+        "3)": {"answer":"Está determinado por las fronteras de un país donde habitan los nacionales de un determinado Estado, donde se ejerce plena soberanía", "isCorrect": 8246}
+    },
+    "¿Cómo se divide el territorio dentro de un Estado?": {
+        "1)": {"answer":"El territorio de un Estado puede ser terrestre, marítimo y aéreo", "isCorrect": 2457},
+        "2)": {"answer":"El territorio de un Estado puede ser ficto o jurídico", "isCorrect": 9862},
+        "3)": {"answer":"El territorio de un Estado puede ser mar adyacente, zona contigua y zona económica exclusiva", "isCorrect": 9123}
+    },
+    "¿Qué entendemos por Derecho?": {
+        "1)": {"answer":"Es un sistema u orden normativo e institucional que regula la conducta externa de las personas, inspirado en los postulados de justicia y certeza jurídica, que regula la convivencia social y permite resolver los conflictos de relevancia jurídica, pudiendo imponerse coactivamente", "isCorrect": 1235},
+        "2)": {"answer":"Conjunto de normas jurídicas que contribuyen a mantener la paz dentro de una sociedad", "isCorrect": 9875},
+        "3)": {"answer":"Conjunto de normas jurídicas y principios que contribuyen a la paz social", "isCorrect": 9876}
+    },
+    "¿Qué es el Derecho Natural?": {
+        "1)": {"answer":"Conjunto de normas y principios jurídicos derivados de la naturaleza y la razón humana, como principios inmutables y universales. Inherente a todas las personas sin importar clase, etnia, sexo, religión, nacionalidad, etc", "isCorrect": 1428},
+        "2)": {"answer":"Conjunto de normas jurídicas de carácter escrito, que han llegado a serlo una vez satisfechas todas las condiciones necesarias para conformarse como leyes en acuerdo con la constitución natural de un país", "isCorrect": 9462},
+        "3)": {"answer":"Conjunto de normas jurídicas de carácter coactivo creado por el poder estatal que busca la paz dentro de una determinada sociedad resolviendo los conflictos de relevancia jurídica", "isCorrect": 9275}
+    },
+    "¿Qué entendemos por poder como elemento del Estado?": {
+        "1)": {"answer":"El poder es una fuerza al servicio de una idea, esa idea es la de derecho, que viene a poner límites al ejercicio del poder", "isCorrect": 1235},
+        "2)": {"answer":"El poder del Estado se divide en ejecutivo, legislativo y judicial", "isCorrect": 9875},
+        "3)": {"answer":"Facultad, habilidad, capacidad o autorización para llevar a cabo una determinada acción. Implica también poseer mayor fortaleza corporal e intelectual en relación a otro individuo y superarlo en una lucha física o en una discusión", "isCorrect": 9876}
+    },
+    "¿Cuál es el límite al ejercicio del poder del Estado?": {
+        "1)": {"answer":"El poder del Estado se encuentra limitado por los derechos esenciales que emanan de la naturaleza humana contenidos en la Constitución y en los Tratados Internacionales ratificados y vigentes en Chile", "isCorrect": 2143},
+        "2)": {"answer":"El Derecho limita el ejercicio del poder del Estado conforme a la Constitución y las leyes", "isCorrect": 9875},
+        "3)": {"answer":"El Derecho limita al poder, pero ambos se necesitan recíprocamente, el poder sin derecho es un nudo poder y el derecho sin poder no puede materializarse", "isCorrect": 9876}
+    },
+    "¿Qué es el bien común como elemento del Estado?": {
+        "1)": {"answer":"Básicamente remite a algo que se pretende que es bueno o beneficioso para todos los integrantes de una sociedad o comunidad. En general se ha entendido que propenden al bien común determinadas normas abstractas o instituciones que contribuyen a que las personas puedan gozar más acabadamente de sus derechos, estén protegidas de agresiones físicas o morales, o se vean facilitados sus esfuerzos para alcanzar su propia felicidad", "isCorrect": 2143},
+        "2)": {"answer":"Es la suma de las condiciones sociales de cada uno de los miembros de una determinada sociedad que contribuyen al bienestar general de la población", "isCorrect": 9875},
+        "3)": {"answer":"Conjunto de condiciones individuales que permiten y favorecen en las personas su mayor realización, tanto material como espiritual", "isCorrect": 9876}
+    }
+}

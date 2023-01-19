@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de contenidos</title>
+
+
+    <style>
+        /* QuickReset */
+        html{
+            overflow-x: hidden;
+        }
+        * {
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        }
+
+        body{
+            background: #0f2027;
+
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            line-height: 150px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /*position: absolute;
+            top: 0;*/
+            font-size: 50px;
+            
+        }
+
+        h3{
+            text-align: center;
+            color: white;
+            /*line-height: 150px;*/
+            font-family: 'Arial', sans-serif;
+            font-weight: 100;
+            /*position: absolute;
+            top: 0;*/
+            /*font-size: 50px;*/
+            
+        }
+
+
+        /* Slider */
+
+        .slider-wrapper {
+        /*overflow: hidden;*/
+        position: relative; /* This makes the buttons positioned relative to the slider-wrapper */
+        }
+
+        .slider {
+        position: relative;
+        display: flex;
+        transition: 0.5s;
+        }
+
+        .item{
+        /*min-height: 150px;*/
+        position: relative;
+        padding: 20px;
+        }
+        .small {
+        flex: 1 0 20%;
+        height: fit-content;
+ 
+
+        }
+        .big {
+        flex: 1 0 30%;
+        max-height: 300px;
+        }
+
+
+        .btn_sli {
+            position: absolute; /* This positions the buttons absolutely */
+            top: 50%; /* This centers the buttons vertically */
+            transform: translateY(-50%); /* This aligns the buttons vertically */
+            z-index: 1; /* This makes the buttons appear over the slider */
+            height: 100%;
+            border: 0;
+            background-color: rgba(100, 100, 100, 0.5);
+        }
+        .btn_sli:hover{
+            background-color: rgba(200, 200, 200, 0.5);
+        }
+
+        .next{
+            right: 0;
+        }
+        .prev{
+            left: 0;
+        }
+        .bar{
+            width: 100%;
+
+        }
+
+        video{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        video:hover{
+            /*     box-shadow: 0 0 10px inset lightblue;*/
+        }
+
+        .fill{
+            width: 100%;
+            height: 100%;
+        }
+
+        .fill:hover{
+            box-shadow: 0 0 5px outset lightblue;
+        }
+        hr{
+            margin: 50px 0;
+            background-color: transparent;
+            border: 0px;
+        }
+        ::-webkit-scrollbar {
+            width: 2px;
+            }
+
+        a{
+            text-emphasis: none;
+            text-decoration: none;
+            color: unset;
+        }
+        ul{
+            list-style-type: none;
+            color: white;
+            font-family: sans-serif;
+        }
+        li{
+            padding: 10px 15px;
+            border: 0.5px solid gray;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 10px;
+        }
+        li:hover{
+            background-color:#0bf;
+            box-shadow: 0 0 10px #0bf;
+        }
+        img{
+            height: 100%;
+            width: auto;
+        }
+        .item p{
+            width: 100%;
+        }
+        p{
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 0.8em;
+
+        }
+        .librosx img{
+            /*height: 80%;*/
+        }
+        .video-title{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-weight: bold;
+            /*text-shadow: 0 0 5px gray;*/
+     
+        }
+        footer {
+            background-color: #333;
+            color: lightgray;
+            margin-top: 50px;
+            padding: 50px;
+            text-align: center;
+            font-size: 12px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight:lighter;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <h1>GALERÍA DE CONTENIDOS</h1>
+
+    <div class="bar">
+        <ul>
+            <a href="#Libros"><li> Libros </li></a>
+            <a href="#Papers"><li> Papers </li></a>
+            <a href="#Cápsulas"><li> Cápsulas </li></a>
+            <a href="#Videos"><li> Videos </li></a>
+            <a href="#Películas"><li> Películas </li></a>
+            <!--a href="#AudioLibros"><li> AudioLibros </li></a-->
+        </ul>
+    </div>
+
+    <hr id="Libros">
+    <h3>Libros</h3>
+    
+    <div class="slider-wrapper librosx" data-items="5">
+        
+        <div class="slider">
+            
+            <a target="_blank" href="cont\libros\Doce tesis sobre la política. Antonio Carlos Pereira Menaut.pdf"><div class="item small">
+            <img src="cont\libros\Doce tesis sobre la política. Antonio Carlos Pereira Menaut.jpg" alt="">
+            <p>Doce tesis sobre la política. Antonio Carlos Pereira Menaut</p>
+            </div></a>
+
+            <a target="_blank" href="cont\libros\El Contrato Social Juan Jacobo Rousseau.pdf"><div class="item small">
+            <img src="cont\libros\El Contrato Social Juan Jacobo Rousseau.jpg" alt="">
+            <p>El Contrato Social Juan Jacobo Rousseau</p>
+            </div></a>            
+           
+            <a target="_blank" href="cont\libros\Rebelión en la Granja. George Orwell.pdf"><div class="item small">
+            <img src="cont\libros\Rebelión en la Granja. George Orwell.jpg" alt="">
+            <p>Rebelión en la Granja. George Orwell</p>
+            </div></a>
+            
+            <a target="_blank" href="cont\libros\Fahrenheit 451. Ray Bradbury.pdf"><div class="item small">
+            <img src="cont\libros\Fahrenheit 451. Ray Bradbury.jpg" alt="">
+            <p>Fahrenheit 451. Ray Bradbury</p>
+            </div></a>
+    
+            <a target="_blank" href="cont\libros\Fundamentos actuales para una Teoría de la Constitución. Francisco Javier Díz Revorio.pdf"><div class="item small">
+            <img src="cont\libros\Fundamentos actuales para una Teoría de la Constitución. Francisco Javier Díz Revorio.jpg" alt="">
+            <p>Fundamentos actuales para una Teoría de la Constitución. Francisco Javier Díz Revorio</p>
+            </div></a>
+
+            <a target="_blank" href="cont\libros\Doce tesis sobre la política. Antonio Carlos Pereira Menaut.pdf"><div class="item small">
+                <img src="cont\libros\Doce tesis sobre la política. Antonio Carlos Pereira Menaut.jpg" alt="">
+                <p>Doce tesis sobre la política. Antonio Carlos Pereira Menaut</p>
+                </div></a>
+    
+                <a target="_blank" href="cont\libros\El Contrato Social Juan Jacobo Rousseau.pdf"><div class="item small">
+                <img src="cont\libros\El Contrato Social Juan Jacobo Rousseau.jpg" alt="">
+                <p>El Contrato Social Juan Jacobo Rousseau</p>
+                </div></a>            
+               
+                <a target="_blank" href="cont\libros\Rebelión en la Granja. George Orwell.pdf"><div class="item small">
+                <img src="cont\libros\Rebelión en la Granja. George Orwell.jpg" alt="">
+                <p>Rebelión en la Granja. George Orwell</p>
+                </div></a>
+                
+                <a target="_blank" href="cont\libros\Fahrenheit 451. Ray Bradbury.pdf"><div class="item small">
+                <img src="cont\libros\Fahrenheit 451. Ray Bradbury.jpg" alt="">
+                <p>Fahrenheit 451. Ray Bradbury</p>
+                </div></a>
+        
+                <a target="_blank" href="cont\libros\Fundamentos actuales para una Teoría de la Constitución. Francisco Javier Díz Revorio.pdf"><div class="item small">
+                <img src="cont\libros\Fundamentos actuales para una Teoría de la Constitución. Francisco Javier Díz Revorio.jpg" alt="">
+                <p>Fundamentos actuales para una Teoría de la Constitución. Francisco Javier Díz Revorio</p>
+                </div></a>
+                
+    
+        </div>
+        <button class="btn_sli prev" type="button">&larr;</button>
+        <button class="btn_sli next" type="button">&rarr;</button>
+        
+      </div>
+
+      <hr id="Papers">
+      <h3>Papers y extractos</h3>
+      
+      <div class="slider-wrapper librosx" data-items="7">
+          
+          <div class="slider">
+              
+      
+              <a target="_blank" href="cont\papers\Teoría Constitucional.pdf"><div class="item small">
+              <img src="cont\papers\Teoría Constitucional.jpg" alt="">
+              <p>Teoría Constitucional</p>
+              </div></a>
+              
+              <a target="_blank" href="cont\papers\Teoría de la Constitución, Positivismo y Derechos Fundamentales. Enrique Serrano Gómez.pdf"><div class="item small">
+              <img src="cont\papers\Teoría de la Constitución, Positivismo y Derechos Fundamentales. Enrique Serrano Gómez.jpg" alt="">
+              <p>Teoría de la Constitución, Positivismo y Derechos Fundamentales. Enrique Serrano Gómez</p>
+              </div></a>
+              
+              <a target="_blank" href="cont\papers\Derecho Natural y Derecho Positivo. Robert P. George.pdf"><div class="item small">
+              <img src="cont\papers\Derecho Natural y Derecho Positivo. Robert P. George.jpg" alt="">
+              <p>Derecho Natural y Derecho Positivo. Robert P. George.pdf</p>
+              </div></a>
+              
+              <a target="_blank" href="cont\papers\Derecho Natural Y Positivismo Jurídico. Ylves J. De Miranda Guimaraes.pdf"><div class="item small">
+              <img src="cont\papers\Derecho Natural Y Positivismo Jurídico. Ylves J. De Miranda Guimaraes.jpg" alt="">
+              <p>Derecho Natural Y Positivismo Jurídico. Ylves J. De Miranda Guimaraes</p>
+              </div></a>
+              
+              
+              <a target="_blank" href="cont\papers\Teoría de la Constitución Constitucionalismo y Poder.pdf"><div class="item small">
+            <img src="cont\papers\Teoría de la Constitución Constitucionalismo y Poder.jpg" alt="">
+            <p>Teoría de la Constitución Constitucionalismo y Poder</p>
+            </div></a>
+      
+
+              
+              <a target="_blank" href="cont\papers\Formación Histórica del Estado en América Latina. Elementos Teórico-Metodológicos para su estudio. Oscar Oszlak.pdf"><div class="item small">
+              <img src="cont\papers\Formación Histórica del Estado en América Latina. Elementos Teórico-Metodológicos para su estudio. Oscar Oszlak.jpg" alt="">
+              <p>Formación Histórica del Estado en América Latina. Elementos Teórico-Metodológicos para su estudio. Oscar Oszlak</p>
+              </div></a>
+              
+              <a target="_blank" href="cont\papers\Formas de Estado y Formas de Gobierno.pdf"><div class="item small">
+              <img src="cont\papers\Formas de Estado y Formas de Gobierno.jpg" alt="">
+              <p>Formas de Estado y Formas de Gobierno</p>
+              </div></a>
+              
+              <a target="_blank" href="cont\papers\Formas de Gobierno y Estado.pdf"><div class="item small">
+              <img src="cont\papers\Formas de Gobierno y Estado.jpg" alt="">
+              <p>Formas de Gobierno y Estado</p>
+              </div></a>
+              
+      
+              <a target="_blank" href="cont\papers\Ley Natural, determinatio y derecho positivo. Lo indiferente y determinaciones del legislador. Sebastián Contreras Aguierr.pdf"><div class="item small">
+              <img src="cont\papers\Ley Natural, determinatio y derecho positivo. Lo indiferente y determinaciones del legislador. Sebastián Contreras Aguierr.jpg" alt="">
+              <p>Ley Natural, determinatio y derecho positivo. Lo indiferente y determinaciones del legislador. Sebastián Contreras Aguierr</p>
+              </div></a>
+              
+              
+              
+              <a target="_blank" href="cont\papers\Sistema Político y Formas de Gobierno. Carlos Gómez Díaz De León.pdf"><div class="item small">
+              <img src="cont\papers\Sistema Político y Formas de Gobierno. Carlos Gómez Díaz De León.jpg" alt="">
+              <p>Sistema Político y Formas de Gobierno. Carlos Gómez Díaz De León</p>
+              </div></a>
+              
+
+      
+      
+      
+          </div>
+          <button class="btn_sli prev" type="button">&larr;</button>
+          <button class="btn_sli next" type="button">&rarr;</button>
+          
+        </div>
+
+
+<hr id="Cápsulas">
+    <h3 id="cápsulas">Cápsulas</h3>
+    <div class="slider-wrapper" data-items="3">
+    
+        <div class="slider">
+            <div class="item big">
+                <video controls src="cont\capsulas\BASES DE LA INSTITUCIONALIDAD.mp4"></video>
+                <p class="video-title">Bases de la Institucionalidad</p>
+            </div>
+            <div class="item big">
+                <video controls src="cont\capsulas\DERECHOS HUMANOS.mp4"></video>
+                <p class="video-title">Derechos Humanos</p>
+            </div>
+            <div class="item big">
+                <video controls src="cont\capsulas\ESTRUCTURA DE UNA CONSTITUCIÓN  1.mp4"></video>
+                <p class="video-title">Estructura De Una Constitución  1</p>
+            </div>
+
+
+            <div class="item big">
+                <video controls src="cont\capsulas\ESTRUCTURA DE UNA CONSTITUCIÓN  2.mp4"></video>
+                <p class="video-title">Estructura De Una Constitución  2</p>
+            </div>
+            <div class="item big">
+                <video controls src="cont\capsulas\FUNCIONES DEL ESTADO.mp4"></video>
+                <p class="video-title">Funciones Del Estado</p>
+            </div>            
+            <div class="item big">
+                <video controls src="cont\capsulas\QUE ES EL ESTADO   TE.mp4"></video>
+                <p class="video-title">Que Es El Estado</p>
+            </div>
+
+            <div class="item big">
+                <video controls src="cont\capsulas\QUE ES UNA CONSTITUCIÓN Y PARA QUE SIRVE  TE.mp4"></video>
+                <p class="video-title">Que Es Una Constitución Y Para Que Sirve</p>
+            </div>
+
+          
+        </div>
+        <button class="btn_sli prev" type="button">&larr;</button>
+        <button class="btn_sli next" type="button">&rarr;</button>
+        
+      </div>
+
+
+
+      <hr id="Videos">
+      <h3 id="videos">Videos</h3>
+      <div class="slider-wrapper" data-items="3">
+      
+          <div class="slider">
+
+              <div class="item big">
+                  <video controls src="cont\videos\¿Qué es el ESTADO y cuáles son sus elementos_ (Con EJEMPLOS)🏛️.mp4#t=0.5"></video>
+                  <p class="video-title">¿Qué es el ESTADO y cuáles son sus elementos?</p>
+              </div>
+  
+  
+              <div class="item big">
+                  <video controls src="cont\videos\COMUNIDAD Y SOCIEDAD, que son.mp4#t=0.5"></video>
+                  <p class="video-title">Comunidad y Sociedad, Qué Son</p>
+              </div>
+              <div class="item big">
+                  <video controls src="cont\videos\Ferdinand Tönnies, Comunidad y Sociedad.mp4#t=0.5"></video>
+                  <p class="video-title">Ferdinand Tönnies, Comunidad y Sociedad</p>
+              </div>            
+              <div class="item big">
+                  <video controls src="cont\videos\Sociedad y comunidad.mp4#t=0.5"></video>
+                  <p class="video-title">Sociedad y comunidad</p>
+              </div>
+  
+            
+          </div>
+          <button class="btn_sli prev" type="button">&larr;</button>
+          <button class="btn_sli next" type="button">&rarr;</button>
+          
+        </div>
+  
+        <hr id="Películas">
+        <h3 id="Películas">Películas</h3>
+        <div class="slider-wrapper" data-items="3">
+        
+            <div class="slider">
+                <div class="item big">
+                    <video controls src="cont\peliculas\La ola Completa Español  (Die Welle, 2008).mp4#t=5"></video>
+                    <p class="video-title">La ola (Die Welle, 2008)</p>
+
+                </div>
+                <div class="item big">
+                    <video controls src="cont\peliculas\'Doce hombres sin piedad' de ESTUDIO 1 (1973) _ Archivo RTVE.mp4#t=5"></video>
+                    <p class="video-title">Doce hombres sin piedad - (Estudio 1, 1973)</p>
+                </div>
+                
+              
+            </div>
+            <button class="btn_sli prev" type="button">&larr;</button>
+            <button class="btn_sli next" type="button">&rarr;</button>
+            
+          </div>
+    
+
+          <footer>Universidad de Atacama - Facultad de Ciencias Jurídicas y Sociales</footer>
+
+<!--hr id="AudioLibros">
+<h3 >AudioLibros</h3>
+
+<div class="slider-wrapper" data-items="5">
+    
+    <div class="slider">
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        <div class="item small"><img src="cont/imgs/audiobook_bgt.png" alt=""><p>AudioLibro</p></div>
+        
+
+    </div>
+    <button class="btn_sli prev" type="button">&larr;</button>
+    <button class="btn_sli next" type="button">&rarr;</button>
+    
+</div-->
+
+
+<!--hr id="placeholder">
+<h3 >Placeholder</h3>
+
+<div class="slider-wrapper" data-items="5">
+    
+    <div class="slider">
+        <div class="item small" style="background:#0bf;">Item 1</div>
+        <div class="item small" style="background:#fb0;">Item 2</div>
+        <div class="item small" style="background:#f0b;">Item 3</div>
+        <div class="item small" style="background:#b0f;">Item 4</div>
+        <div class="item small" style="background:#bf0;">Item 5</div>
+
+        <div class="item small" style="background:#0bf;">Item 1</div>
+        <div class="item small" style="background:#fb0;">Item 2</div>
+        <div class="item small" style="background:#f0b;">Item 3</div>
+        <div class="item small" style="background:#b0f;">Item 4</div>
+        <div class="item small" style="background:#bf0;">Item 5</div>
+
+        <div class="item small" style="background:#0bf;">Item 1</div>
+        <div class="item small" style="background:#fb0;">Item 2</div>
+        <div class="item small" style="background:#f0b;">Item 3</div>
+        <div class="item small" style="background:#b0f;">Item 4</div>
+        <div class="item small" style="background:#bf0;">Item 5</div>
+        
+
+    </div>
+    <button class="btn_sli prev" type="button">&larr;</button>
+    <button class="btn_sli next" type="button">&rarr;</button>
+    
+</div-->
+
+<script>
+    const ELS = (sel, par) => (par || document).querySelectorAll(sel);
+    const EL = (sel, par) => (par || document).querySelector(sel);
+    const mod = (n, m) => (n % m + m) % m;
+
+    ELS(".slider-wrapper").forEach(EL_par => {
+    const EL_slider = EL(".slider", EL_par);
+    const ELS_items = ELS(".item", EL_par);
+    const sub = +EL_par.dataset.items ?? 1;
+    const tot = Math.ceil(ELS_items.length / sub);
+    let c = 0;
+    
+    const anim = () => EL_slider.style.transform = `translateX(-${c*100}%)`;
+    const prev = () => (c = mod(c-1, tot), anim());
+    const next = () => (c = mod(c+1, tot), anim());
+    
+    EL(".prev", EL_par).addEventListener("click", prev);
+    EL(".next", EL_par).addEventListener("click", next);
+    });
+
+
+
+    function setupVideos() {
+    for (const video of document.querySelectorAll('video')) {
+        video.controls = false
+        video.addEventListener('mouseover', () => { video.controls = 'controls' })
+        video.addEventListener('mouseout', () => { video.controls = false })
+    }
+    }
+    window.addEventListener('load', setupVideos, false)
+</script>
+</script>
+</body>
+</html>
